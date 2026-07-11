@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NYCTA - IT & Security Solutions. Layanan CCTV, Jaringan, Mikrotik, dan IT Support profesional di Depok dan sekitarnya.">
+    <meta name="description" content="NYCTA - IT & Security Solutions. Layanan CCTV, Jaringan, Mikrotik, IT Support, dan Jual Laptop Second berkualitas di Depok dan sekitarnya.">
     <title>NYCTA - IT & Security Solutions</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -439,6 +439,105 @@
             margin: 0;
         }
 
+        /* ============================================ */
+        /* LAPTOP SECTION STYLES (BARU)                 */
+        /* ============================================ */
+        .laptop {
+            background: var(--light);
+        }
+
+        .laptop-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .laptop-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .laptop-specs {
+            list-style: none;
+            margin: 1rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .laptop-specs li {
+            padding: 0.35rem 0;
+            font-size: 0.92rem;
+            color: #555;
+        }
+
+        .laptop-specs li::before {
+            content: '▸ ';
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .laptop-features {
+            list-style: none;
+            margin: 1rem 0 2rem;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .laptop-features li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .laptop-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .laptop-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .benefit-item {
+            padding: 2rem 1.5rem;
+            background: var(--gray);
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+
+        .benefit-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        /* ============================================ */
+
         /* Portfolio Section */
         .portfolio-grid {
             display: grid;
@@ -646,6 +745,7 @@
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#services">Layanan</a></li>
                 <li><a href="#pricing">Harga</a></li>
+                <li><a href="#laptop">Laptop</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
             <div class="mobile-menu">
@@ -818,6 +918,103 @@
 
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!-- LAPTOP SECOND SECTION (BARU)                 -->
+    <!-- ============================================ -->
+    <section class="laptop" id="laptop">
+        <div class="container">
+            <h2 class="section-title">Laptop Second Berkualitas</h2>
+            <p class="section-subtitle">Sudah dites, disetting, dan siap pakai oleh teknisi profesional</p>
+
+            <div class="pricing-grid">
+                <!-- Card 1: Student / Basic -->
+                <div class="pricing-card laptop-card">
+                    <span class="laptop-icon">🎓</span>
+                    <h3>Student / Basic</h3>
+                    <div class="price">1.8jt<span> / mulai dari</span></div>
+                    <ul class="laptop-specs">
+                        <li>Intel Core i3 / i5</li>
+                        <li>RAM 4GB / 8GB</li>
+                        <li>SSD 128GB / 256GB</li>
+                        <li>Windows 10 Original</li>
+                    </ul>
+                    <ul class="laptop-features">
+                        <li>Garansi Personal 1 Bulan</li>
+                        <li>Free Install Office</li>
+                        <li>Cocok untuk kuliah & kerja ringan</li>
+                    </ul>
+                    <a href="https://wa.me/628139909764?text=Halo%20NYCTA,%20saya%20mau%20tanya%20stok%20laptop%20basic" class="btn btn-primary">Cek Stok via WA</a>
+                </div>
+
+                <!-- Card 2: Business Class (Featured) -->
+                <div class="pricing-card featured laptop-card">
+                    <span class="badge">BEST SELLER</span>
+                    <span class="laptop-icon">💼</span>
+                    <h3>Business Class</h3>
+                    <div class="price">2.5jt<span> / mulai dari</span></div>
+                    <ul class="laptop-specs">
+                        <li>Intel Core i5 / i7</li>
+                        <li>RAM 8GB (Upgradeable)</li>
+                        <li>SSD 256GB (Upgradeable)</li>
+                        <li>Windows 10/11 Original</li>
+                    </ul>
+                    <ul class="laptop-features">
+                        <li>Garansi Personal 1-3 Bulan</li>
+                        <li>Free Install Office & Driver</li>
+                        <li>Full Hardware Check</li>
+                        <li>ThinkPad / Latitude / EliteBook</li>
+                    </ul>
+                    <a href="https://wa.me/628139909764?text=Halo%20NYCTA,%20saya%20mau%20tanya%20stok%20laptop%20business" class="btn btn-primary">Cek Stok via WA</a>
+                </div>
+
+                <!-- Card 3: Performance Class -->
+                <div class="pricing-card laptop-card">
+                    <span class="laptop-icon">🚀</span>
+                    <h3>Performance Class</h3>
+                    <div class="price">3.5jt<span> / mulai dari</span></div>
+                    <ul class="laptop-specs">
+                        <li>Intel Core i7 Gen 8+</li>
+                        <li>RAM 16GB Dual Channel</li>
+                        <li>SSD 512GB NVMe</li>
+                        <li>Windows 11 Pro Original</li>
+                    </ul>
+                    <ul class="laptop-features">
+                        <li>Garansi Personal 3 Bulan</li>
+                        <li>Free Install Office & Antivirus</li>
+                        <li>Battery Health > 80%</li>
+                        <li>Cocok untuk editing & multitasking</li>
+                    </ul>
+                    <a href="https://wa.me/628139909764?text=Halo%20NYCTA,%20saya%20mau%20tanya%20stok%20laptop%20performance" class="btn btn-primary">Cek Stok via WA</a>
+                </div>
+            </div>
+
+            <!-- Value Props / Benefits -->
+            <div class="laptop-benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🛡️</div>
+                    <h4>Garansi Personal</h4>
+                    <p>Bukan barang rongsokan. Kami berikan garansi personal 1-3 bulan untuk ketenangan Anda.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚙️</div>
+                    <h4>Sudah Full Setting</h4>
+                    <p>Tinggal pakai. OS original, driver, dan software dasar sudah kami install dan optimasi.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔍</div>
+                    <h4>Quality Control Ketat</h4>
+                    <p>Battery health, layar, keyboard, dan semua port dicek satu per satu sebelum dijual.</p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="pricing-note">
+                <p>* Stok laptop second berubah sewaktu-waktu. Harga dapat menyesuaikan kondisi unit, spesifikasi, dan permintaan upgrade (RAM/SSD). Hubungi kami untuk cek stok terbaru dan foto real unit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================ -->
 
     <!-- Portfolio Section -->
 <section class="portfolio" id="portfolio">
